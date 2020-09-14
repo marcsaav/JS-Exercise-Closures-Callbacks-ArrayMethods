@@ -9,7 +9,7 @@ The module challenge is the afternoon project or assignment that students work t
 ## Objectives
 
 - Explain function scope
-- Describe what closure is, how closure is created in a program and why it is important to understand closures in JavaScript  
+- Describe what closure is, how closure is created in a program and why it is important to understand closures in JavaScript
 
 ## Introduction
 
@@ -17,7 +17,7 @@ This challenge focuses on both scope and closures.
 
 In this challenge you will be working to build a `scoreboard` (in the console) that takes randomly generated data and keeps track of a game's progress. If you're not familiar with the rules of baseball what you need to know is this: there are 9 innings and teams take turns "at-bat." Teams can only score while they are at bat. A team stops being at bat once they have gotten 3 `outs` by either striking out or through game play. You can read more about baseball rules [here](https://www.rulesofsport.com/sports/baseball.html).
 
-A scoreboard in a major league stadium looks something like this. In fact, the scoreboard at Fenway Park in Boston is actually quite famous. 
+A scoreboard in a major league stadium looks something like this. In fact, the scoreboard at Fenway Park in Boston is actually quite famous.
 
 ![Fenway Scoreboard](https://storage.googleapis.com/afs-prod/media/media:e959506330fd4e5890023c93cfbaac55/800.jpeg)
 
@@ -44,6 +44,7 @@ Find the file `index.js` and complete the tasks until your tests are passing.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+  Closure is the relationship between a reference within a function to a variable outside the function.
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -65,8 +66,11 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+  ${name} within the returned function is an example of closure, referencing the parameter of the outer function.
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
-c. What is the lexical scope of `newRoll`? 
+  The string will always stay the same, except for the number, which would change with every invokation.
+c. What is the lexical scope of `newRoll`?
+  newRoll is contained inside the function that's contained inside the larger function personalDice.
 
 ### Task 3 - Stretch Goals
 
@@ -114,11 +118,11 @@ addSix(21); // returns 27
 - Open `index.html`
 - You should see the following at first with failed tests and error messages
 
-<img alt='failing tests' src='assets/FailingTests.png'> 
+<img alt='failing tests' src='assets/FailingTests.png'>
 
 - Once your code is working you will see tests passing and can click on tests to view the code which made the test pass.
 
-<img alt='passing tests' src='assets/PassingTests.png'> 
+<img alt='passing tests' src='assets/PassingTests.png'>
 
 ## Resources
 
